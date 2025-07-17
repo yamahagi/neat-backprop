@@ -1,0 +1,37 @@
+digraph {
+	rankdir=LR
+	0 [label=bias fillcolor=gold shape=diamond style=filled]
+	1 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	2 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	3 [label=output fillcolor=lightgreen shape=ellipse style=filled]
+	4 [label="4
+sine" fillcolor=lightcoral shape=circle style=filled]
+	5 [label="5
+add" fillcolor=lightcoral shape=circle style=filled]
+	6 [label="6
+tanh" fillcolor=lightcoral shape=circle style=filled]
+	7 [label="7
+relu" fillcolor=lightcoral shape=circle style=filled]
+	8 [label="8
+tanh" fillcolor=lightcoral shape=circle style=filled]
+	9 [label="9
+abs" fillcolor=lightcoral shape=circle style=filled]
+	10 [label="10
+add" fillcolor=lightcoral shape=circle style=filled]
+	2 -> 3 [label="6.84 / 1" color=black]
+	0 -> 4 [label="1.91 / 3" color=black]
+	1 -> 5 [label="4.52 / 12" color=black]
+	4 -> 6 [label="0.37 / 21" color=black]
+	6 -> 3 [label="0.74 / 16" color=black]
+	0 -> 7 [label="2.75 / 27" color=black]
+	6 -> 5 [label="-0.81 / 19" color=red]
+	7 -> 8 [label="-0.55 / 51" color=red]
+	8 -> 6 [label="-0.85 / 43" color=red]
+	1 -> 9 [label="1.97 / 52" color=black]
+	9 -> 4 [label="3.02 / 46" color=black]
+	4 -> 5 [label="0.44 / 13" color=black]
+	5 -> 10 [label="1.00 / 87" color=black]
+	10 -> 3 [label="1.47 / 85" color=black]
+	4 -> 3 [label="2.37 / 4" color=black]
+	2 -> 10 [label="1.47 / 65" color=black]
+}

@@ -1,0 +1,29 @@
+digraph {
+	rankdir=LR
+	0 [label=bias fillcolor=gold shape=diamond style=filled]
+	1 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	2 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	3 [label=output fillcolor=lightgreen shape=ellipse style=filled]
+	4 [label="4
+square" fillcolor=lightcoral shape=circle style=filled]
+	5 [label="5
+sine" fillcolor=lightcoral shape=circle style=filled]
+	6 [label="6
+sine" fillcolor=lightcoral shape=circle style=filled]
+	7 [label="7
+sigmoid" fillcolor=lightcoral shape=circle style=filled]
+	8 [label="8
+mult" fillcolor=lightcoral shape=circle style=filled]
+	2 -> 3 [label="-0.05 / 1" color=red]
+	1 -> 4 [label="-0.60 / 5" color=red]
+	0 -> 4 [label="0.06 / 6" color=black]
+	0 -> 5 [label="1.62 / 11" color=black]
+	2 -> 5 [label="-0.48 / 10" color=red]
+	6 -> 3 [label="1.61 / 15" color=black]
+	2 -> 6 [label="0.70 / 16" color=black]
+	5 -> 7 [label="2.21 / 26" color=black]
+	7 -> 6 [label="1.32 / 34" color=black]
+	4 -> 8 [label="1.01 / 35" color=black]
+	8 -> 3 [label="-0.58 / 36" color=red]
+	5 -> 3 [label="3.24 / 9" color=black]
+}

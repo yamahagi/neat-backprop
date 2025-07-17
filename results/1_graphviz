@@ -1,0 +1,61 @@
+digraph {
+	rankdir=LR
+	0 [label=bias fillcolor=gold shape=diamond style=filled]
+	1 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	2 [label=input fillcolor=skyblue shape=ellipse style=filled]
+	3 [label=output fillcolor=lightgreen shape=ellipse style=filled]
+	4 [label="4
+sine" fillcolor=lightcoral shape=circle style=filled]
+	5 [label="5
+abs" fillcolor=lightcoral shape=circle style=filled]
+	6 [label="6
+sine" fillcolor=lightcoral shape=circle style=filled]
+	7 [label="7
+sine" fillcolor=lightcoral shape=circle style=filled]
+	8 [label="8
+tanh" fillcolor=lightcoral shape=circle style=filled]
+	9 [label="9
+relu" fillcolor=lightcoral shape=circle style=filled]
+	10 [label="10
+relu" fillcolor=lightcoral shape=circle style=filled]
+	11 [label="11
+abs" fillcolor=lightcoral shape=circle style=filled]
+	12 [label="12
+square" fillcolor=lightcoral shape=circle style=filled]
+	13 [label="13
+sigmoid" fillcolor=lightcoral shape=circle style=filled]
+	14 [label="14
+gaussian" fillcolor=lightcoral shape=circle style=filled]
+	15 [label="15
+tanh" fillcolor=lightcoral shape=circle style=filled]
+	16 [label="16
+gaussian" fillcolor=lightcoral shape=circle style=filled]
+	17 [label="17
+add" fillcolor=lightcoral shape=circle style=filled]
+	0 -> 3 [label="-0.07 / 2" color=red]
+	4 -> 3 [label="-7.15 / 4" color=red]
+	2 -> 6 [label="-0.06 / 15" color=red]
+	1 -> 7 [label="0.38 / 29" color=black]
+	7 -> 5 [label="-1.82 / 30" color=red]
+	2 -> 8 [label="-4.08 / 34" color=red]
+	8 -> 4 [label="1.75 / 41" color=black]
+	0 -> 9 [label="0.56 / 49" color=black]
+	9 -> 8 [label="-0.47 / 48" color=red]
+	6 -> 10 [label="0.27 / 81" color=black]
+	10 -> 11 [label="2.77 / 96" color=black]
+	12 -> 3 [label="-0.17 / 103" color=red]
+	4 -> 6 [label="0.96 / 20" color=black]
+	0 -> 13 [label="1.56 / 175" color=black]
+	7 -> 4 [label="-1.87 / 28" color=red]
+	11 -> 14 [label="2.09 / 225" color=black]
+	14 -> 12 [label="0.28 / 105" color=black]
+	5 -> 15 [label="1.05 / 240" color=black]
+	15 -> 4 [label="1.82 / 191" color=black]
+	11 -> 12 [label="0.02 / 102" color=black]
+	6 -> 3 [label="-0.45 / 16" color=red]
+	16 -> 5 [label="1.67 / 242" color=black]
+	0 -> 12 [label="0.81 / 122" color=black]
+	13 -> 17 [label="1.00 / 297" color=black]
+	17 -> 16 [label="0.43 / 270" color=black]
+	17 -> 10 [label="0.93 / 401" color=black]
+}
