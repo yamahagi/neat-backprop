@@ -7,5 +7,5 @@ pip install -r requirements.txt
 python main.py
 ```
 
-If you want to change the target dataset, set the 'choice' to 0~3.
-# neat-backprop
+If you want to change hyper parameters, change the number in settings.py
+The resulting networks and plotted images are in results directory.
