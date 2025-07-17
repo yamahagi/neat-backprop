@@ -1,0 +1,7 @@
+jax
+scikit-learn
+optax
+networkx
+graphviz
+matplotlib
+numpy
